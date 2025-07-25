@@ -1,0 +1,18 @@
+---
+const { description, name, position } = Astro.props
+---
+
+<div class="card border-0 shadow">
+  <div class="card-body px-3 py-5">
+    <i class="bi bi-quote display-4 bg-body-tertiary rounded-5 px-2 border"></i>
+    <figure>
+      <div class="blockquote">
+        <p class="card-text fs-5 pt-3">{description}</p>
+      </div>
+      <strong class="d-block mt-5 h4">{name}</strong>
+      <figcaption>
+        <small class="blockquote-footer">{position}</small>
+      </figcaption>
+    </figure>
+  </div>
+</div>

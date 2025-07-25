@@ -1,0 +1,12 @@
+---
+const { style, title, description } = Astro.props
+---
+
+<div class={style}>
+  <div class="card-body px-3 py-5">
+    <slot name="icon" />
+    <h1 class="h3 card-title mt-3">{title}</h1>
+    <p class="card-text fs-5 pt-3">{description}</p>
+    <slot name="tombol" />
+  </div>
+</div>
