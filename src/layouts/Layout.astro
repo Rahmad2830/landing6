@@ -1,4 +1,5 @@
 ---
+const { pageTitle } = Astro.props
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../styles/global.css"
@@ -10,7 +11,7 @@ import "../styles/global.css"
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<slot />
