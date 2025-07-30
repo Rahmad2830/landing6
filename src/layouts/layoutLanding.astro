@@ -125,7 +125,7 @@ const { frontmatter } = Astro.props
 	      </div>
 	      ))}
 	      <div class="col-lg-4">
-	        <Paket paket={frontmatter.paketCustom.harga} description={frontmatter.paketCustom.description} btn={frontmatter.paketBtn}>
+	        <Paket paket={frontmatter.paketCustom.paket} description={frontmatter.paketCustom.description} btn={frontmatter.paketBtn}>
 	          <div slot="harga">
 	            <h2 class="fs-1 fw-semibold mt-4">{frontmatter.paketCustom.harga}</h2>
 	          </div>
